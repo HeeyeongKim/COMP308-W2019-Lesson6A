@@ -18,5 +18,19 @@ router.get('/services', indexController.displayServicesPage);
 /* GET contact page. */
 router.get('/contact', indexController.displayContactPage);
 
+/* GET - login page. */
+router.get('/login', indexController.displayLoginPage);
+
+/* POST - process login page */
+router.get('/login', indexController.processLoginPage);
+
+/* GET - displays the registration page */
+router.get('/register', indexController.displayRegistrationPage);
+
+/* POST - Process the registration page */
+router.get('/register', indexController.processRegistrationPage);
+
+/* GET - perform the logout request */
+router.get('/logout', indexController.performLogout);
 
 module.exports = router;
